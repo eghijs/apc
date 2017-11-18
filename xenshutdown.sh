@@ -1,9 +1,9 @@
 #!/bin/sh
 IFS=","
-XENHOSTNAME="s-xs-2"
-XENHOST="10.1.8.1"
+XENHOSTNAME=""
+XENHOST=""
 XENUSER="root"
-XENPWD="illusion"
+XENPWD=""
 
 for VM in `xe vm-list is-control-domain=false power-state=running params=uuid --minimal`
 do
